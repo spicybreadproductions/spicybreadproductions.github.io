@@ -5,14 +5,31 @@
 }
 
 body {
-    background-color: #E4D8FF; /* #1E0652; */
-    font-family: 'Playfair Display', serif;
+    /* background-color: #E4D8FF; */
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    /* font-family: 'Kaisei Tokumin', serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
+}
+
+.overlay {
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba( 	255, 255, 255,0.6);
+  z-index: 2;
 }
 
 main {
     max-width: 95%;
     margin: 0 auto 24px;
+    z-index: 10;
+    position: relative;
 }
 
 .image-container {
@@ -29,7 +46,13 @@ main {
 
 p {
     font-size: 18px;
-    margin: 1rem 0;
+    margin: 8px auto;
+    font-weight: 500;
+    max-width: 300px;
+}
+
+p .game-title {
+    font-weight: 800;
 }
 
 .links-container {
@@ -38,24 +61,44 @@ p {
 }
 
 .link {
+    font-size: 14px;
     border: 2px solid #1E0652;
-    color: #1E0652;
-    border-radius: 20px;
-    width: 220px;
+    background: #1E0652;
+    color: #fff;
+    border-radius: 10px;
+    width: 235px;
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    margin: 10px auto;
+    margin: 6px auto;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}
+
+.link img {
+    width: 16px;
+    left: 12px;
+    position: absolute;
+}
+
+.link .icon-star {
+    width: 20px;
+    left: 8px;
+    position: absolute;
+    margin-top: 2px;
+    margin-right: 4px;
 }
 
 .link:hover {
-    background: #1E0652;
-    color: #E4D8FF;
+    color: #1E0652;
+    background: #E4D8FF;
 }
 
 .copyright {
-    color: #666;
+    color: #212121;
     font-size: 12px;
-    margin-top: 12px;
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
