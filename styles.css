@@ -21,6 +21,11 @@ main {
     margin: 0 16px 24px;
     z-index: 10;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+    overflow: hidden;
 }
 
 p {
@@ -86,7 +91,7 @@ li {
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    margin: 6px auto;
+    margin: 6px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -104,4 +109,14 @@ li {
     margin-top: 16px;
     margin-bottom: 40px;
     text-align: center;
+}
+
+#wishlist {
+    background: linear-gradient(to right, #6fa720 5%, #588a1b 95%);
+    border-color: #588a1b;
+}
+
+#wishlist:hover {
+    color: #1E0652;
+    background: #6fa720;
 }
