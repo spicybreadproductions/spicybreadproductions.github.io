@@ -60,8 +60,12 @@ h3 {
     margin-top: 20px;
 }
 
+.at-a-glance {
+    text-align: center;
+}
+
 ul {
-    margin: 24px 16px;
+    margin: 0 16px 16px;
     max-width: 500px;
     text-align: left;
 }
